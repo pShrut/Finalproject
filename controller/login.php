@@ -1,6 +1,6 @@
 <?php
-include("../config/config.php");
-include("../model/user.php");
+include_once("../config/config.php");
+include_once("../model/user.php");
 $email=$_POST['email'];
 $pass=$_POST['password'];
 $o_client=new login($conn);
