@@ -76,7 +76,7 @@ if(!isset($_SESSION['id']))
 			
 			
 			<div class="info">
-			<a href=""><?php echo $_SESSION['username']; ?></a>
+			<a href= "<?php echo SITE_URL."dashboard.php?page=profile&action=edit" ;?>" > <?php echo $_SESSION['username']; ?></a>
 			<ul class="tools list-inline">
 			<li><a href="" data-toggle="tooltip" title="Settings"><i class="ion-gear-a"></i></a></li>
 							
