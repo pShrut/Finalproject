@@ -56,7 +56,7 @@ if(!isset($_SESSION['id']))
 	<header>
 		<a href="dashboard.php" class="logo"><i class="ion-ios-bolt"></i> <span><?php echo SITE_TITLE; ?></span></a>
 		<nav class="navbar navbar-static-top">
-			<a href="#" class="navbar-btn sidebar-toggle">
+		<a href="#" class="navbar-btn sidebar-toggle">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -93,8 +93,16 @@ if(!isset($_SESSION['id']))
                         <i class="ion-home"></i> <span>Dashboard</span>
                         </a>
                         </li>
-                   
+                  <li class="nav-dropdown">
+		<a href="#">
+		<i class="ion-email"></i><span>Account</span>
+		<i class="ion-chevron-right pull-right"></i>
+		</a>
+		<ul>
+		<li><a href="<?php echo SITE_URL; ?>dashboard.php?page=account&action=all">Manage Account</a></li>
                    </ul>
+		   </li>
+		   </ul>
 		<!-- END NAV -->
 		<!-- BEGIN WIDGET -->
 		<!-- END WIDGET -->

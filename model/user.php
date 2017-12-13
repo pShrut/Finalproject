@@ -89,5 +89,8 @@ class login
         $statement->execute(array('2'));
 	return 'success';
     }
+    function Bcrypt($password){
+    	return password_hash($password,$PASSWORD_BCRYPT);
+    }
    }
 ?>
