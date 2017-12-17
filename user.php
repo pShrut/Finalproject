@@ -2,7 +2,7 @@
 <?php
 include_once("model/user.php");
 $o_client=new login($conn);
-$where = "1=1";
+$where ="id='".$_SESSION['id']."'";
 $result = $o_client->AllData("accounts",$where);
 
 ?>
@@ -53,7 +53,7 @@ $result = $o_client->AllData("accounts",$where);
 					
 	<div class="row">
 	<div style="margin-top: 10px;">
-	<a href="<?php echo SITE_URL; ?>dashboard.php?page=account&action=add"><button type="button" style="float:right;" class="btn bg-green-500 color-white btn-dark padding-left-40 padding-right-40" >Add Account</button></a>
+	<a href="<?php echo SITE_URL; ?>dashboard.php?page=account&action=add"><button type="button"  class="btn bg-green-500 color-white btn-dark padding-left-40 padding-right-40" >Add Account</button></a>
 	</div>
         <div class="col-lg-12">
     	<div class="panel no-border ">

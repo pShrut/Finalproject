@@ -102,6 +102,17 @@ if(!isset($_SESSION['id']))
 		<li><a href="<?php echo SITE_URL; ?>dashboard.php?page=account&action=all">Manage Account</a></li>
                    </ul>
 		   </li>
+              <li class="nav-dropdown">
+              <a href="#">
+	<i class="ion-email"></i><span>Todo</span>
+	<i class="ion-chevron-right pull-right"></i>
+	</a> 
+	<ul>
+	<li><a href="<?php echo SITE_URL; ?>dashboard.php?page=todo&action=all">Manage Todo</a></li>
+	</ul> 
+	</li> 
+
+
 		   </ul>
 		<!-- END NAV -->
 		<!-- BEGIN WIDGET -->
